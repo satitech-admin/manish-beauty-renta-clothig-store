@@ -1,32 +1,33 @@
-# Manish Costume — Beauty, Rental Clothing & Jewellery
+# Manish Beauty Center — Rental Clothing, Jewellery & Costumes
 
-Premium responsive rental-fashion website for **Manish Costume, Betul**.
+Premium mobile-first rental catalogue and booking website for **Manish Beauty Center, Betul**.
 
-## Free live preview
+## GitHub Pages URL
 
-Primary:
-https://raw.githack.com/satitech-admin/manish-beauty-renta-clothig-store/main/index.html
+https://satitech-admin.github.io/manish-beauty-renta-clothig-store/
 
-Fallback:
-https://html-preview.github.io/?url=https://github.com/satitech-admin/manish-beauty-renta-clothig-store/blob/main/index.html
+## Website features
 
-## Highlights
+- 50-product rental catalogue with reference imagery
+- Rental prices, product codes, sizes and occasion tags
+- Wedding, Garba, traditional, men, women, kids, drama/stage and fancy-dress categories
+- Bridal, Kundan, Polki, Temple, oxidised and festive jewellery listings
+- Product-specific WhatsApp booking to +91 87179 34400
+- Search, category filters and price sorting
+- Rental enquiry form with event/pickup/return dates
+- Google Maps, directions and contact integration
+- Mobile-first responsive product cards, forms, modals, filters and navigation
+- LocalBusiness SEO metadata
+- Root static entry point: `index.html`
+- `.nojekyll` included for GitHub Pages
 
-- Premium editorial fashion-store visual direction
-- Responsive desktop, tablet and mobile layouts
-- Dynamic mobile navigation
-- Wedding, Garba, traditional wear, fancy dress and jewellery sections
-- Searchable and filterable rental collection
-- Product detail routes in the Next.js source
-- WhatsApp enquiry CTAs
-- Scroll and hover micro-interactions
-- SEO-ready metadata for Betul rental-fashion searches
-- Standalone browser preview at `/index.html`
-- GitHub Pages deployment workflow included and ready once Pages is enabled for the repository
+## Deployment
+
+The repository is prepared for native GitHub Pages publishing. A `gh-pages` branch mirrors the production source.
 
 ## Stack
 
-Next.js 15 · React 19 · Lucide React · responsive custom CSS
+Static HTML/CSS/JavaScript preview + Next.js source.
 
 ---
-Built as a premium presentation-ready rental clothing and jewellery experience.
+Manish Beauty Center · Betul
