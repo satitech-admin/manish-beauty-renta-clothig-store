@@ -9,7 +9,7 @@ export default async function ProductPage({params}){
   const {slug}=await params;
   const p=products.find(x=>x.slug===slug)||products[0];
   const related=products.filter(x=>x.slug!==p.slug && (x.category===p.category || x.age===p.age)).slice(0,3);
-  const msg=`Hello Manish Beauty Center, I am interested in renting the ${p.name}. Please share availability and rental details.`;
+  const msg=`Hello Manish Beauty Center, I am interested in this rental product.\n\nProduct: ${p.name}\nProduct code: ${p.code}\nCategory: ${p.category}\nStarting rent: ₹${p.price}/day\nFor: ${p.age}\nOccasion: ${p.occasion}\nSize/Fit: ${p.sizes}\n\nPlease share exact availability, size and final rental terms.`;
   const wa=`https://wa.me/918717934400?text=${encodeURIComponent(msg)}`;
   return <main>
     <SiteHeader/>
@@ -18,7 +18,7 @@ export default async function ProductPage({params}){
       <div className="detail-copy">
         <Link href="/costumes" className="back-link"><ArrowLeft size={16}/> All collections</Link>
         <span className="eyebrow">{p.category} · {p.age}</span>
-        <h1>{p.name}</h1>
+        <h1>{p.name}</h1><div className="detail-product-code">{p.code}</div><div className="detail-price">₹{p.price}<span>/ day onwards</span></div><div className="detail-specs"><span>{p.occasion}</span><span>{p.sizes}</span></div>
         <p className="detail-intro">A statement rental look for celebrations, performances and special occasions. Exact size, fitting, rental period and pricing are confirmed directly with the store before booking.</p>
         <div className="detail-notes">
           <div><CalendarDays/><span><b>Check your date</b><small>Confirm availability for your event.</small></span></div>
@@ -30,7 +30,7 @@ export default async function ProductPage({params}){
     </section>
     <section className="related wrap">
       <div className="section-kicker"><span className="eyebrow">YOU MAY ALSO LIKE</span><h2>More from the <i>rental wardrobe.</i></h2></div>
-      <div className="related-grid">{related.map(r=><Link href={`/costumes/${r.slug}`} key={r.slug}><img src={r.image} alt={r.name}/><span>{r.category}</span><h3>{r.name}</h3></Link>)}</div>
+      <div className="related-grid">{related.map(r=><Link href={`/costumes/${r.slug}`} key={r.slug}><img src={r.image} alt={r.name}/><span>{r.category} · {r.code}</span><h3>{r.name}</h3><b>₹{r.price}/day onwards</b></Link>)}</div>
     </section>
   </main>
 }
