@@ -44,6 +44,40 @@ header{height:78px;position:sticky;top:0;z-index:50;background:rgba(255,253,249,
 @media(max-width:720px){.business-bar-in{grid-template-columns:1fr 1fr}.biz-proof{min-height:72px;border-bottom:1px solid var(--line)}.services-grid{grid-template-columns:1fr 1fr}.location-grid{grid-template-columns:1fr}.location-card{padding:34px 24px}.map-shell{min-height:390px}.map-shell iframe{min-height:374px}.social-rail{display:none}.float-wa{right:14px;bottom:14px}.float-wa{height:50px;padding:0 14px}.float-wa b{font-size:16px}}@media(max-width:560px){.rental-list-grid,.process-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.booking-form{padding:20px}.rental-tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}.rental-tabs button{white-space:nowrap}}
 @media(max-width:480px){.business-bar-in{grid-template-columns:1fr}.biz-proof{border-right:0}.services-grid{grid-template-columns:1fr}.float-wa{min-width:50px;font-size:0;padding:0}.float-wa b{font-size:18px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Mobile production hardening */
+html,body{max-width:100%;overflow-x:hidden}
+button,input,select,textarea{max-width:100%}
+img{max-width:100%;height:auto}
+.card,.rental-list-card,.service-card,.process-card,.bundle-card{min-width:0}
+.meta h3,.product-meta-rich h3,.ocopy h3,.garba-copy h3{overflow-wrap:anywhere}
+@media(max-width:767px){
+  .wrap{width:min(100% - 24px,1220px)}
+  header{height:66px}.head{gap:10px}.mark{width:36px;height:36px}.mobile{top:66px;max-height:calc(100dvh - 66px);overflow:auto}
+  .brandcopy b{font-size:11px;line-height:1.1}.brandcopy small{display:none}
+  .hero-grid{padding:34px 0 42px;gap:24px}.hero h1{font-size:clamp(39px,12vw,52px);line-height:.98;margin:16px 0 18px}.hero p{font-size:11px;line-height:1.65}
+  .collage{height:330px}.mainpic{height:82%;width:62%;left:19%}.one{width:35%;height:38%}.two{width:39%;height:42%}.badge{width:74px;height:74px;font-size:6px}
+  .business-bar-in{grid-template-columns:1fr 1fr}.biz-proof{padding:12px 10px;min-width:0}.biz-proof b{font-size:12px}.biz-proof small{font-size:6px}
+  .intro,.story,.rental-hub,.services-pro,.rental-process,.bundle-section,.faq-section,.location-premium{padding-top:64px;padding-bottom:64px}
+  .grid{grid-template-columns:1fr 1fr;gap:9px}.photo{height:220px}.meta{padding:10px}.meta h3{font-size:14px;line-height:1.18}.occasion-line{font-size:7px!important}.price-line{margin:8px 0}.price-line b{font-size:18px}
+  .card-actions{grid-template-columns:1fr;gap:6px}.card-actions button{min-height:38px}
+  .toolbar{display:grid;grid-template-columns:1fr;gap:8px}.sort-select{width:100%;margin:0}.catalog-toolbar-note{display:block;line-height:1.5}.catalog-toolbar-note span{display:block;margin-top:4px}
+  .chips,.rental-tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:8px;scrollbar-width:none}.chips::-webkit-scrollbar,.rental-tabs::-webkit-scrollbar{display:none}.chips button,.rental-tabs button{white-space:nowrap;flex:0 0 auto}
+  .booking-grid{grid-template-columns:1fr;gap:28px}.booking-form{padding:18px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.booking-submit{min-height:48px}
+  .services-grid,.rental-list-grid,.process-grid{grid-template-columns:1fr}.bundle-grid{grid-template-columns:1fr}
+  .location-card{padding:28px 20px}.map-shell{min-height:330px;border-width:5px}.map-shell iframe{min-height:320px}
+  .modal{padding:10px}.modalbox{grid-template-columns:1fr;max-height:94dvh;border-radius:14px}.modalbox img{height:300px}.modalcopy{padding:20px}.modalcopy h2{font-size:30px}.modal-actions{grid-template-columns:1fr}.close{position:sticky;top:8px;margin-left:auto;z-index:4}
+  .float-wa{right:12px;bottom:12px;height:48px;min-width:48px;padding:0 13px}
+}
+@media(max-width:420px){
+  .grid{grid-template-columns:1fr}
+  .photo{height:min(118vw,430px)}
+  .business-bar-in{grid-template-columns:1fr}
+  .proof{grid-template-columns:1fr 1fr}
+  .collage{height:300px}
+  .hero h1{font-size:40px}
+}
+
 </style>
 <meta property="og:title" content="Manish Beauty Center | Rental Clothing, Jewellery & Styling | Betul"/>
 <meta property="og:description" content="Explore wedding, Garba, traditional, fancy dress and jewellery rental looks at Manish Beauty Center, Kothi Bazar, Betul."/>
