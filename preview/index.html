@@ -26,10 +26,19 @@ header{height:78px;position:sticky;top:0;z-index:50;background:rgba(255,253,249,
 .social-rail{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:45;display:flex;flex-direction:column;gap:8px}.social-rail a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#fff;border:1px solid var(--line);box-shadow:0 8px 24px rgba(30,18,28,.1);font-size:15px;transition:.25s}.social-rail a:hover{transform:translateX(-4px);background:#f5e8ec}.float-wa{position:fixed;right:20px;bottom:20px;z-index:60;background:#1f9d5b;color:#fff;min-width:54px;height:54px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;padding:0 16px;box-shadow:0 18px 35px rgba(22,90,53,.28);font-size:10px;font-weight:700}.float-wa b{font-size:18px}
 .mobile-contact-dock{display:none}
 
+
+.rental-hub{padding:105px 0;background:#fff}.rental-hub-head{display:grid;grid-template-columns:1fr .8fr;gap:50px;align-items:end;margin-bottom:34px}.rental-hub-head p{font-size:11px;line-height:1.8;color:var(--muted)}.catalog-note{display:inline-flex;align-items:center;gap:7px;background:#f7eee5;border:1px solid var(--line);padding:8px 11px;border-radius:99px;font-size:8px;margin-top:12px}.rental-tabs{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 24px}.rental-tabs button{border:1px solid var(--line);background:#fff;padding:9px 13px;border-radius:99px;font:inherit;font-size:8px;cursor:pointer;transition:.25s}.rental-tabs button.active,.rental-tabs button:hover{background:var(--ink);color:#fff}.rental-list-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.rental-list-card{border:1px solid var(--line);background:linear-gradient(160deg,#fff,#fbf6f2);padding:20px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;transition:.3s}.rental-list-card:hover{transform:translateY(-5px);box-shadow:0 20px 46px rgba(40,22,34,.07)}.rental-list-card .rental-icon{font-size:28px}.rental-list-card small{font-size:7px;letter-spacing:1.4px;color:#9a7a87}.rental-list-card h3{font:600 20px "Playfair Display";margin:8px 0}.rental-list-card p{font-size:9px;line-height:1.65;color:var(--muted)}.rental-list-card a{font-size:8px;font-weight:700}
+.booking-zone{background:linear-gradient(135deg,#20151d,#5e3b50);color:#fff;padding:100px 0;position:relative;overflow:hidden}.booking-zone:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-170px;top:-230px;background:radial-gradient(circle,rgba(255,224,194,.16),transparent 68%)}.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start;position:relative;z-index:1}.booking-intro .eyebrow{color:#ebcad5}.booking-intro h2{font:600 clamp(42px,4.4vw,62px)/.98 "Playfair Display";margin:13px 0 18px}.booking-intro h2 i{color:#f0cfda}.booking-intro>p{font-size:11px;line-height:1.8;color:#d6c8d0}.booking-steps{display:grid;gap:10px;margin-top:28px}.booking-step{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;padding:12px 0;border-top:1px solid rgba(255,255,255,.11)}.booking-step:last-child{border-bottom:1px solid rgba(255,255,255,.11)}.booking-step b{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#f4e9dd;color:#241720;font:600 12px "Playfair Display"}.booking-step span strong{display:block;font-size:9px}.booking-step span small{display:block;font-size:8px;color:#bcaeb7;margin-top:3px;line-height:1.5}
+.booking-form{background:#fff;color:var(--ink);padding:28px;box-shadow:0 28px 65px rgba(0,0,0,.18)}.form-head{display:flex;justify-content:space-between;gap:20px;align-items:start;margin-bottom:20px}.form-head h3{font:600 27px "Playfair Display";margin:0 0 5px}.form-head p{font-size:8px;color:#887b84;margin:0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:7px;letter-spacing:1.2px;font-weight:700;color:#756a72}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#fffdf9;padding:12px 12px;outline:0;font:inherit;font-size:10px}.field textarea{min-height:88px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:#a65068;box-shadow:0 0 0 3px rgba(166,80,104,.08)}.booking-submit{width:100%;margin-top:15px;border:0;background:var(--ink);color:#fff;min-height:50px;border-radius:99px;font:inherit;font-size:10px;font-weight:700;cursor:pointer}.form-note{font-size:7px;color:#8c8188;text-align:center;line-height:1.5;margin:10px 0 0}.rental-process{padding:105px 0;background:#f7f0e8}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.process-card{background:#fff;padding:25px;min-height:215px}.process-card b{font:600 35px "Playfair Display";color:#d8c7ce}.process-card h3{font:600 19px "Playfair Display";margin:24px 0 8px}.process-card p{font-size:9px;line-height:1.65;color:var(--muted)}
+.bundle-section{padding:105px 0}.bundle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.bundle-card{min-height:300px;padding:28px;background:#171218;color:#fff;position:relative;overflow:hidden}.bundle-card:nth-child(2){background:#654055}.bundle-card:nth-child(3){background:#8b6551}.bundle-card:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-75px;top:-75px;border:1px solid rgba(255,255,255,.15)}.bundle-card small{font-size:7px;letter-spacing:1.8px;color:#d8c6cf}.bundle-card h3{font:600 28px "Playfair Display";margin:16px 0 10px}.bundle-card p{font-size:9px;line-height:1.7;color:#e0d6dc}.bundle-card ul{padding:0;margin:18px 0 0;list-style:none}.bundle-card li{font-size:8px;padding:7px 0;border-top:1px solid rgba(255,255,255,.11)}
+.faq-section{padding:100px 0}.faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:55px}.faq-list details{border-top:1px solid var(--line);padding:15px 0}.faq-list details:last-child{border-bottom:1px solid var(--line)}.faq-list summary{cursor:pointer;font:600 17px "Playfair Display";list-style:none}.faq-list summary::-webkit-details-marker{display:none}.faq-list p{font-size:9px;line-height:1.75;color:var(--muted);margin:10px 0 0}
+
 @media(max-width:1050px){.nav{display:none}.menu{display:block}.head-cta{display:none}.mobile{position:fixed;left:0;right:0;top:78px;background:#151016;color:white;display:flex;flex-direction:column;padding:18px 24px 25px;transform:translateY(-130%);opacity:0;pointer-events:none;transition:.35s}.mobile.open{transform:none;opacity:1;pointer-events:auto}.mobile a{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.09);font:600 20px "Playfair Display"}.hero-grid{grid-template-columns:1fr}.hero-copy{text-align:center}.hero p{margin-left:auto;margin-right:auto}.actions,.proof{justify-content:center}.collage{max-width:690px;width:100%;margin:auto}.ribbon{display:flex;overflow:auto}.cat{min-width:145px}.grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:800px){.wrap{width:calc(100% - 30px)}.intro{grid-template-columns:50px 1fr}.intro>p{grid-column:2}.occasion{grid-template-columns:1fr 1fr;grid-auto-rows:300px}.occasion article{grid-column:auto!important;grid-row:auto!important}.story{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.garba-grid{grid-template-columns:1fr 1fr}.foot{grid-template-columns:1fr 1fr}.modalbox{grid-template-columns:1fr}.modalbox img{height:420px}}
 @media(max-width:560px){header{height:70px}.mobile{top:70px}.brandcopy b{font-size:12px}.brandcopy small{font-size:5.5px}.hero-grid{min-height:auto;padding:42px 0}.hero h1{font-size:48px;letter-spacing:-1.7px}.hero p{font-size:12px}.actions{flex-direction:column}.actions .btn{width:100%}.proof{display:grid;grid-template-columns:1fr 1fr;gap:8px}.proof div{border:1px solid var(--line)!important;padding:9px;justify-content:center}.collage{height:390px}.mainpic{width:58%;height:80%;left:21%;border-width:5px}.one{width:34%;height:39%;border-width:4px}.two{width:38%;height:43%;border-width:4px}.badge{width:88px;height:88px}.intro{grid-template-columns:1fr;padding:70px 0}.intro>p{grid-column:auto}.intro h2,.title h2,.story h2,.contact h2{font-size:38px}.title a{position:static;display:block;margin-top:12px}.occasion{grid-template-columns:1fr;grid-auto-rows:355px}.story{padding:75px 0}.storymedia{height:470px}.toolbar{display:block}.search{width:100%;margin-bottom:10px}.grid{grid-template-columns:1fr 1fr;gap:10px}.photo{height:250px}.meta{padding:11px}.meta h3{font-size:15px}.garba{padding:75px 0}.garba-grid{display:flex;overflow-x:auto}.garba-card{min-width:84%;height:460px}.contact-in{display:block}.contact .btn{margin-top:20px;width:100%}.foot{grid-template-columns:1fr}.copy{display:block}.copy span{display:block;margin-top:7px}.modalcopy{padding:25px}}
-@media(max-width:720px){.business-bar-in{grid-template-columns:1fr 1fr}.biz-proof{min-height:72px;border-bottom:1px solid var(--line)}.services-grid{grid-template-columns:1fr 1fr}.location-grid{grid-template-columns:1fr}.location-card{padding:34px 24px}.map-shell{min-height:390px}.map-shell iframe{min-height:374px}.social-rail{display:none}.float-wa{right:14px;bottom:14px}.float-wa{height:50px;padding:0 14px}.float-wa b{font-size:16px}}@media(max-width:480px){.business-bar-in{grid-template-columns:1fr}.biz-proof{border-right:0}.services-grid{grid-template-columns:1fr}.float-wa{min-width:50px;font-size:0;padding:0}.float-wa b{font-size:18px}}
+@media(max-width:900px){.rental-hub-head,.booking-grid,.faq-grid{grid-template-columns:1fr}.rental-list-grid{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:1fr 1fr}.bundle-grid{grid-template-columns:1fr}.booking-grid{gap:35px}}
+@media(max-width:720px){.business-bar-in{grid-template-columns:1fr 1fr}.biz-proof{min-height:72px;border-bottom:1px solid var(--line)}.services-grid{grid-template-columns:1fr 1fr}.location-grid{grid-template-columns:1fr}.location-card{padding:34px 24px}.map-shell{min-height:390px}.map-shell iframe{min-height:374px}.social-rail{display:none}.float-wa{right:14px;bottom:14px}.float-wa{height:50px;padding:0 14px}.float-wa b{font-size:16px}}@media(max-width:560px){.rental-list-grid,.process-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.booking-form{padding:20px}.rental-tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}.rental-tabs button{white-space:nowrap}}
+@media(max-width:480px){.business-bar-in{grid-template-columns:1fr}.biz-proof{border-right:0}.services-grid{grid-template-columns:1fr}.float-wa{min-width:50px;font-size:0;padding:0}.float-wa b{font-size:18px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 <meta property="og:title" content="Manish Beauty Center | Rental Clothing, Jewellery & Styling | Betul"/>
@@ -97,6 +106,33 @@ header{height:78px;position:sticky;top:0;z-index:50;background:rgba(255,253,249,
   </div>
 </section>
 
+
+<section class="rental-hub" id="rental-catalogue">
+  <div class="wrap reveal">
+    <div class="rental-hub-head">
+      <div><span class="eyebrow">CLOTHES · COSTUMES · JEWELLERY · PROPS</span><h2 class="serif" style="font-size:clamp(40px,4vw,58px);line-height:1.02;margin:12px 0">Rental catalogue for <span class="accent">every function.</span></h2></div>
+      <div><p>Wedding se Garba, drama, school function, cultural program, fancy dress aur stage performance tak—customers occasion ke according complete look enquire kar sakte hain.</p><span class="catalog-note">✦ Exact design, size & availability WhatsApp par confirm hoti hai</span></div>
+    </div>
+    <div class="rental-tabs" id="rentalTabs">
+      <button class="active" data-rental="all">All</button><button data-rental="wedding">Wedding</button><button data-rental="garba">Garba</button><button data-rental="traditional">Traditional</button><button data-rental="drama">Drama / Stage</button><button data-rental="kids">Kids</button><button data-rental="jewellery">Jewellery</button><button data-rental="men">Men</button><button data-rental="women">Women</button>
+    </div>
+    <div class="rental-list-grid" id="rentalList">
+      <article class="rental-list-card" data-type="wedding women"><span class="rental-icon">👰</span><div><small>WEDDING · WOMEN</small><h3>Bridal Lehenga & Wedding Sets</h3><p>Bridal, engagement, reception and family-function statement looks.</p></div><a href="#book-rental">Book / check availability ↗</a></article>
+      <article class="rental-list-card" data-type="wedding men"><span class="rental-icon">🤵</span><div><small>WEDDING · MEN</small><h3>Sherwani & Groom Looks</h3><p>Groom, sangeet, reception and traditional wedding outfits.</p></div><a href="#book-rental">Book / check availability ↗</a></article>
+      <article class="rental-list-card" data-type="garba women"><span class="rental-icon">💃</span><div><small>GARBA · NAVRATRI</small><h3>Chaniya Choli & Garba Looks</h3><p>Colourful festive looks for Garba nights, dance groups and events.</p></div><a href="#book-rental">Book / check availability ↗</a></article>
+      <article class="rental-list-card" data-type="traditional women"><span class="rental-icon">🥻</span><div><small>TRADITIONAL · WOMEN</small><h3>Saree, Lugda & Regional Drapes</h3><p>Traditional and cultural-function outfits for multiple occasions.</p></div><a href="#book-rental">Book / check availability ↗</a></article>
+      <article class="rental-list-card" data-type="traditional men"><span class="rental-icon">👳</span><div><small>TRADITIONAL · MEN</small><h3>Dhoti, Kurta & Turban Looks</h3><p>Regional, festive and cultural-event styling for men and boys.</p></div><a href="#book-rental">Book / check availability ↗</a></article>
+      <article class="rental-list-card" data-type="drama kids"><span class="rental-icon">🎭</span><div><small>DRAMA · SCHOOL · STAGE</small><h3>Character & Theatre Costumes</h3><p>Mythology, historical, royal, profession and stage-character looks.</p></div><a href="#book-rental">Book / check availability ↗</a></article>
+      <article class="rental-list-card" data-type="kids traditional"><span class="rental-icon">🧒</span><div><small>KIDS · FUNCTIONS</small><h3>Kids Traditional & Fancy Dress</h3><p>School functions, annual day, Janmashtami, cultural programs and competitions.</p></div><a href="#book-rental">Book / check availability ↗</a></article>
+      <article class="rental-list-card" data-type="jewellery wedding women"><span class="rental-icon">💎</span><div><small>BRIDAL JEWELLERY</small><h3>Bridal Necklace Sets</h3><p>Statement necklace, earrings and coordinated bridal-look options.</p></div><a href="#book-rental">Add jewellery ↗</a></article>
+      <article class="rental-list-card" data-type="jewellery wedding women"><span class="rental-icon">✨</span><div><small>WEDDING · FESTIVE</small><h3>Kundan / Polki Style Sets</h3><p>Wedding and festive statement jewellery categories on rental enquiry.</p></div><a href="#book-rental">Add jewellery ↗</a></article>
+      <article class="rental-list-card" data-type="jewellery traditional women"><span class="rental-icon">🪷</span><div><small>TRADITIONAL JEWELLERY</small><h3>Temple & Traditional Sets</h3><p>Traditional-event necklace and accessory categories for a complete look.</p></div><a href="#book-rental">Add jewellery ↗</a></article>
+      <article class="rental-list-card" data-type="jewellery garba women"><span class="rental-icon">🌙</span><div><small>GARBA · FOLK</small><h3>Oxidised & Garba Jewellery</h3><p>Neckpieces, earrings and festive accessories suited to Garba styling.</p></div><a href="#book-rental">Add jewellery ↗</a></article>
+      <article class="rental-list-card" data-type="jewellery wedding women"><span class="rental-icon">👑</span><div><small>ACCESSORIES</small><h3>Maang Tikka, Bangles & Add-ons</h3><p>Finishing accessories to coordinate with selected rental outfits.</p></div><a href="#book-rental">Build complete look ↗</a></article>
+    </div>
+  </div>
+</section>
+
 <section class="worlds wrap reveal">
   <div class="title"><span class="eyebrow">BROWSE BY WORLD</span><h2>Choose your <span class="accent">occasion.</span></h2><a href="#collections">View full collection ↗</a></div>
   <div class="ribbon">
@@ -156,6 +192,75 @@ header{height:78px;position:sticky;top:0;z-index:50;background:rgba(255,253,249,
 
 <section class="contact" id="contact">
   <div class="contact-in wrap reveal"><div><span class="eyebrow">YOUR EVENT, YOUR LOOK</span><h2>Have a date already?</h2><p>Tell us the occasion and event date. We’ll help narrow down the right rental options.</p></div><a class="btn" href="https://wa.me/918717934400?text=Hello%20Manish%20Costume%2C%20I%20want%20to%20check%20rental%20availability.%20My%20event%20date%20is%3A%20" target="_blank" rel="noreferrer">Check availability ↗</a></div>
+</section>
+
+
+<section class="booking-zone" id="book-rental">
+  <div class="booking-grid wrap">
+    <div class="booking-intro reveal">
+      <span class="eyebrow">BOOK A RENTAL LOOK</span>
+      <h2>Tell us the function.<br><i>We’ll match the look.</i></h2>
+      <p>Booking request WhatsApp par jaati hai. Store exact availability, design, size, fitting, deposit/rental terms and final amount confirm karega.</p>
+      <div class="booking-steps">
+        <div class="booking-step"><b>1</b><span><strong>Choose the occasion</strong><small>Wedding, Garba, drama, school, cultural or other function.</small></span></div>
+        <div class="booking-step"><b>2</b><span><strong>Add size & rental dates</strong><small>Event, pickup and expected return details share karein.</small></span></div>
+        <div class="booking-step"><b>3</b><span><strong>Build the complete look</strong><small>Clothes ke saath jewellery, props or accessories add karein.</small></span></div>
+        <div class="booking-step"><b>4</b><span><strong>Confirm on WhatsApp</strong><small>+91 87179 34400 par final availability confirm hogi.</small></span></div>
+      </div>
+    </div>
+    <form class="booking-form reveal" id="rentalBookingForm">
+      <div class="form-head"><div><h3>Rental enquiry</h3><p>No online payment · availability confirmation first</p></div><span style="font-size:25px">✦</span></div>
+      <div class="form-grid">
+        <div class="field"><label>YOUR NAME *</label><input id="bkName" required placeholder="Name"></div>
+        <div class="field"><label>PHONE NUMBER *</label><input id="bkPhone" required inputmode="tel" placeholder="+91"></div>
+        <div class="field"><label>FUNCTION / OCCASION *</label><select id="bkOccasion" required><option value="">Select</option><option>Wedding / Reception</option><option>Engagement / Sangeet</option><option>Garba / Navratri</option><option>Drama / Theatre / Stage</option><option>School Function / Annual Day</option><option>Fancy Dress Competition</option><option>Cultural / Traditional Function</option><option>Janmashtami / Religious Event</option><option>Photoshoot / Performance</option><option>Other</option></select></div>
+        <div class="field"><label>WHAT DO YOU NEED? *</label><select id="bkNeed" required><option value="">Select</option><option>Clothes only</option><option>Jewellery only</option><option>Clothes + Jewellery</option><option>Costume + Props</option><option>Complete look / styling</option></select></div>
+        <div class="field"><label>FOR WHOM?</label><select id="bkFor"><option>Women</option><option>Men</option><option>Girl</option><option>Boy</option><option>Couple</option><option>Group / Team</option></select></div>
+        <div class="field"><label>SIZE / AGE</label><input id="bkSize" placeholder="e.g. M / 38 / 8 years"></div>
+        <div class="field"><label>EVENT DATE *</label><input id="bkEvent" type="date" required></div>
+        <div class="field"><label>NUMBER OF LOOKS</label><input id="bkQty" type="number" min="1" value="1"></div>
+        <div class="field"><label>PICKUP DATE</label><input id="bkPickup" type="date"></div>
+        <div class="field"><label>RETURN DATE</label><input id="bkReturn" type="date"></div>
+        <div class="field full"><label>STYLE / COLOUR / CHARACTER / JEWELLERY NOTES</label><textarea id="bkNotes" placeholder="Example: red bridal look, Krishna costume, Garba jewellery, 6-person drama group..."></textarea></div>
+      </div>
+      <button class="booking-submit" type="submit">Send booking request on WhatsApp ↗</button>
+      <p class="form-note">Submitting opens WhatsApp with your details. Booking is confirmed only after store confirmation.</p>
+    </form>
+  </div>
+</section>
+
+<section class="rental-process">
+  <div class="wrap reveal">
+    <div class="title"><span class="eyebrow">HOW RENTAL WORKS</span><h2>Simple from selection to <span class="accent">return.</span></h2></div>
+    <div class="process-grid">
+      <article class="process-card"><b>01</b><h3>Enquire</h3><p>Share occasion, date, size, category and number of looks required.</p></article>
+      <article class="process-card"><b>02</b><h3>Select & Fit</h3><p>Shortlist available designs and confirm fit/size directly with the store.</p></article>
+      <article class="process-card"><b>03</b><h3>Pickup & Celebrate</h3><p>Collect the confirmed outfit, jewellery and accessories for your function.</p></article>
+      <article class="process-card"><b>04</b><h3>Return</h3><p>Return within the agreed rental period and follow the confirmed rental terms.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="bundle-section wrap reveal">
+  <div class="title"><span class="eyebrow">COMPLETE-LOOK RENTALS</span><h2>Don’t stop at the outfit.<br><span class="accent">Build the whole character.</span></h2></div>
+  <div class="bundle-grid">
+    <article class="bundle-card"><small>WEDDING LOOK</small><h3>Bridal / Groom Bundle</h3><p>For wedding, reception, engagement and family celebrations.</p><ul><li>Outfit category</li><li>Matching jewellery options</li><li>Selected accessories / styling add-ons</li></ul></article>
+    <article class="bundle-card"><small>GARBA LOOK</small><h3>Navratri Bundle</h3><p>For Garba nights, dance groups and cultural events.</p><ul><li>Chaniya choli / traditional outfit</li><li>Oxidised or festive jewellery category</li><li>Coordinated accessories</li></ul></article>
+    <article class="bundle-card"><small>DRAMA / STAGE</small><h3>Character Bundle</h3><p>For school, theatre, fancy dress and stage performance.</p><ul><li>Character costume</li><li>Props where available</li><li>Accessories to complete the role</li></ul></article>
+  </div>
+</section>
+
+<section class="faq-section wrap reveal">
+  <div class="faq-grid">
+    <div><span class="eyebrow">RENTAL FAQ</span><h2 class="serif" style="font-size:clamp(38px,4vw,56px);line-height:1.03;margin:12px 0">Before you <span class="accent">book.</span></h2><p style="font-size:10px;line-height:1.75;color:var(--muted)">Exact pricing, deposit, fitting and rental duration can vary by selected item, so final terms are confirmed by the store before booking.</p></div>
+    <div class="faq-list">
+      <details open><summary>Can I rent clothes and jewellery together?</summary><p>Yes—booking form me “Clothes + Jewellery” ya “Complete look / styling” select karke requirement share kar sakte hain. Exact matching options availability par depend karengi.</p></details>
+      <details><summary>Do you provide costumes for drama and school functions?</summary><p>Site me drama, theatre, stage, annual day, fancy dress and cultural-program categories included hain. Character name/role notes me mention karein.</p></details>
+      <details><summary>How do I know my size is available?</summary><p>Size/age booking request me share karein. Store exact item and fitting availability WhatsApp/call par confirm karega.</p></details>
+      <details><summary>Is the booking confirmed after sending the form?</summary><p>No. Form WhatsApp enquiry create karta hai. Booking tab confirm hoti hai jab store selected item, date and terms approve kare.</p></details>
+      <details><summary>Can groups or dance teams enquire?</summary><p>Yes. “Group / Team” choose karke number of looks aur colour/theme notes share karein.</p></details>
+    </div>
+  </div>
 </section>
 
 <section class="location-premium" id="location">
@@ -236,6 +341,38 @@ document.getElementById("menu").onclick=function(){document.getElementById("mobi
 document.querySelectorAll("#mobile a").forEach(function(a){a.onclick=function(){document.getElementById("mobile").classList.remove("open")}});
 var observer=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add("show")})},{threshold:.08});
 document.querySelectorAll(".reveal").forEach(function(el){observer.observe(el)});
+
+function filterRental(type){
+  document.querySelectorAll("#rentalTabs button").forEach(function(b){b.classList.toggle("active",b.dataset.rental===type)});
+  document.querySelectorAll("#rentalList .rental-list-card").forEach(function(card){
+    card.style.display=(type==="all"||card.dataset.type.split(" ").indexOf(type)>-1)?"flex":"none";
+  });
+}
+document.querySelectorAll("#rentalTabs button").forEach(function(b){b.onclick=function(){filterRental(b.dataset.rental)}});
+
+document.getElementById("rentalBookingForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  var pickup=document.getElementById("bkPickup").value, ret=document.getElementById("bkReturn").value;
+  if(pickup&&ret&&ret<pickup){alert("Return date pickup date se pehle nahi ho sakti.");return;}
+  var msg=[
+    "Hello Manish Beauty Center, I want to book a rental look.",
+    "",
+    "Name: "+document.getElementById("bkName").value,
+    "Phone: "+document.getElementById("bkPhone").value,
+    "Occasion: "+document.getElementById("bkOccasion").value,
+    "Need: "+document.getElementById("bkNeed").value,
+    "For: "+document.getElementById("bkFor").value,
+    "Size / Age: "+(document.getElementById("bkSize").value||"Not specified"),
+    "Event date: "+document.getElementById("bkEvent").value,
+    "Number of looks: "+document.getElementById("bkQty").value,
+    "Pickup date: "+(pickup||"To be discussed"),
+    "Return date: "+(ret||"To be discussed"),
+    "Notes: "+(document.getElementById("bkNotes").value||"None"),
+    "",
+    "Please share available options, fitting details and rental terms."
+  ].join("\n");
+  window.open("https://wa.me/918717934400?text="+encodeURIComponent(msg),"_blank");
+});
 renderChips();render();
 </script>
 </body>
