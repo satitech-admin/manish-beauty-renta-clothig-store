@@ -9,8 +9,8 @@ export default async function ProductPage({params}){
   const {slug}=await params;
   const p=products.find(x=>x.slug===slug)||products[0];
   const related=products.filter(x=>x.slug!==p.slug && (x.category===p.category || x.age===p.age)).slice(0,3);
-  const msg=`Hello Manish Costume, I am interested in renting the ${p.name}. Please share availability and rental details.`;
-  const wa=`https://wa.me/?text=${encodeURIComponent(msg)}`;
+  const msg=`Hello Manish Beauty Center, I am interested in renting the ${p.name}. Please share availability and rental details.`;
+  const wa=`https://wa.me/918717934400?text=${encodeURIComponent(msg)}`;
   return <main>
     <SiteHeader/>
     <section className="detail wrap">
