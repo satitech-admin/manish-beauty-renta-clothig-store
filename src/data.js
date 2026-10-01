@@ -9,7 +9,8 @@ export const categories = [
   {name:"Garba", sub:"Chaniya Choli & More", icon:"💃", tone:"yellow"},
   {name:"Wedding", sub:"Bridal & Groom", icon:"💍", tone:"coral"},
   {name:"Traditional", sub:"Lugda & Ethnic Wear", icon:"🪷", tone:"mint"},
-  {name:"Accessories", sub:"Dupattas & Props", icon:"👜", tone:"lav"}
+  {name:"Accessories", sub:"Dupattas & Props", icon:"👜", tone:"lav"},
+  {name:"Drama / Stage", sub:"Characters & Theatre", icon:"🎬", tone:"purple"}
 ];
 
 export const products = [
@@ -35,7 +36,13 @@ export const products = [
   {name:"Traditional Dance Costume", category:"Festivals", age:"Teens & Adults", image:px(34484952), tone:"purple", slug:"traditional-dance-costume", tag:"Performance"},
   {name:"Bridal Jewellery Look", category:"Jewellery", age:"Adults", image:px(10954266), tone:"gold", slug:"bridal-jewellery-look", tag:"Jewellery"},
   {name:"Statement Jewellery Set", category:"Jewellery", age:"Adults", image:px(14704594), tone:"purple", slug:"statement-jewellery-set", tag:"Jewellery"},
-  {name:"Festive Jewellery Styling", category:"Jewellery", age:"Adults", image:px(30484079), tone:"coral", slug:"festive-jewellery-styling", tag:"Jewellery"}
+  {name:"Festive Jewellery Styling", category:"Jewellery", age:"Adults", image:px(30484079), tone:"coral", slug:"festive-jewellery-styling", tag:"Jewellery"},
+  {name:"Bridal Necklace Set", category:"Jewellery", age:"Adults", image:px(10954266), tone:"gold", slug:"bridal-necklace-set", tag:"Bridal Jewellery"},
+  {name:"Kundan Wedding Set", category:"Jewellery", age:"Adults", image:px(14704594), tone:"purple", slug:"kundan-wedding-set", tag:"Kundan"},
+  {name:"Garba Oxidised Jewellery", category:"Jewellery", age:"Teens & Adults", image:px(30484079), tone:"coral", slug:"garba-oxidised-jewellery", tag:"Garba Jewellery"},
+  {name:"Royal Drama Costume", category:"Drama / Stage", age:"Kids & Adults", image:px(29657805), tone:"purple", slug:"royal-drama-costume", tag:"Stage"},
+  {name:"Mythology Stage Costume", category:"Drama / Stage", age:"Kids", image:px(9370063), tone:"gold", slug:"mythology-stage-costume", tag:"Mythology"},
+  {name:"School Annual Day Look", category:"Drama / Stage", age:"Kids", image:px(33508436), tone:"blue", slug:"school-annual-day-look", tag:"School Function"}
 ];
 
 export const occasions = [
