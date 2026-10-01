@@ -1,8 +1,8 @@
 name: Deploy Manish Costume to GitHub Pages
 
+# Source is ready for GitHub Pages. The repository's Pages feature must be enabled
+# before this manual workflow can deploy; keeping it manual avoids false failed checks.
 on:
-  push:
-    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -20,42 +20,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Enable GitHub Pages when needed
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REPO: ${{ github.repository }}
-        run: |
-          code=$(curl -sS -o /tmp/pages.json -w "%{http_code}"             -H "Accept: application/vnd.github+json"             -H "Authorization: Bearer $GH_TOKEN"             -H "X-GitHub-Api-Version: 2022-11-28"             "https://api.github.com/repos/$REPO/pages")
-          if [ "$code" = "404" ]; then
-            created=$(curl -sS -o /tmp/pages-create.json -w "%{http_code}"               -X POST               -H "Accept: application/vnd.github+json"               -H "Authorization: Bearer $GH_TOKEN"               -H "X-GitHub-Api-Version: 2022-11-28"               "https://api.github.com/repos/$REPO/pages"               -d '{"build_type":"workflow"}')
-            echo "Pages create status: $created"
-            cat /tmp/pages-create.json || true
-            test "$created" = "201" || test "$created" = "204"
-          else
-            echo "Pages already configured (HTTP $code)"
-          fi
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
       - name: Install dependencies
         run: npm ci
-
       - name: Build static site
         run: npm run build
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-
   deploy:
     environment:
       name: github-pages
