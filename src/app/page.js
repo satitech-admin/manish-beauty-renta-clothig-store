@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight, CalendarDays, Gem, MapPin, MessageCircle, ShieldCheck, WandSparkles } from "lucide-react";
 import { categories, products, occasions, garbaCollection, homeImages } from "../data";
 import SiteHeader from "../components/SiteHeader";
+import RentalBooking from "../components/RentalBooking";
 
 const wa=(text)=>`https://wa.me/918717934400?text=${encodeURIComponent(text)}`;
 
@@ -79,6 +80,8 @@ export default function Home(){
     <section id="jewellery" className="jewel-section">
       <div className="wrap jewel-grid"><div className="jewel-head"><span className="eyebrow">COMPLETE THE LOOK</span><h2>Jewellery that<br/><i>doesn’t need to be yours forever.</i></h2><p>Pair your rental outfit with statement jewellery and accessories for a polished, coordinated finish.</p><Link className="btn btn-light" href="/costumes">See jewellery looks <ArrowUpRight size={17}/></Link></div>{products.slice(20,23).map(p=><Link href={`/costumes/${p.slug}`} className="jewel-look" key={p.slug}><img src={p.image} alt={p.name}/><div><small>JEWELLERY RENTAL</small><h3>{p.name}</h3><ArrowUpRight/></div></Link>)}</div>
     </section>
+
+    <RentalBooking/>
 
     <section className="booking-premium wrap">
       <div><span className="eyebrow">YOUR EVENT, YOUR LOOK</span><h2>Have a date already?</h2><p>Tell us the occasion and event date. We’ll help you narrow down the right rental options.</p></div>
