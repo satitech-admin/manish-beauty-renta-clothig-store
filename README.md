@@ -2,12 +2,13 @@
 
 Premium responsive rental-fashion website for **Manish Costume, Betul**.
 
-## Live preview
+## Free live preview
 
-https://htmlpreview.github.io/?https://github.com/satitech-admin/manish-beauty-renta-clothig-store/blob/main/preview/index.html
+Primary:
+https://raw.githack.com/satitech-admin/manish-beauty-renta-clothig-store/main/index.html
 
-Backup preview:
-https://raw.githack.com/satitech-admin/manish-beauty-renta-clothig-store/main/preview/index.html
+Fallback:
+https://html-preview.github.io/?url=https://github.com/satitech-admin/manish-beauty-renta-clothig-store/blob/main/index.html
 
 ## Highlights
 
@@ -20,7 +21,7 @@ https://raw.githack.com/satitech-admin/manish-beauty-renta-clothig-store/main/pr
 - WhatsApp enquiry CTAs
 - Scroll and hover micro-interactions
 - SEO-ready metadata for Betul rental-fashion searches
-- Standalone browser preview included at `preview/index.html`
+- Standalone browser preview at `/index.html`
 - GitHub Pages deployment workflow included and ready once Pages is enabled for the repository
 
 ## Stack
