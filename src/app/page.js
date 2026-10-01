@@ -3,7 +3,7 @@ import { ArrowUpRight, CalendarDays, Gem, MapPin, MessageCircle, ShieldCheck, Wa
 import { categories, products, occasions, garbaCollection, homeImages } from "../data";
 import SiteHeader from "../components/SiteHeader";
 
-const wa=(text)=>`https://wa.me/?text=${encodeURIComponent(text)}`;
+const wa=(text)=>`https://wa.me/918717934400?text=${encodeURIComponent(text)}`;
 
 export default function Home(){
   const featured=products.slice(0,8);
@@ -19,7 +19,7 @@ export default function Home(){
           <p>Premium rental clothing, bridal & groom looks, Garba outfits, fancy dress, jewellery and accessories—curated for every celebration in Betul.</p>
           <div className="hero-actions">
             <Link className="btn btn-dark" href="/costumes">Explore the wardrobe <ArrowUpRight size={17}/></Link>
-            <a className="btn btn-light" href={wa("Hello Manish Costume, I want help choosing a rental look for my event.")} target="_blank" rel="noreferrer">Style me for my event</a>
+            <a className="btn btn-light" href={wa("Hello Manish Beauty Center, I want help choosing a rental look for my event.")} target="_blank" rel="noreferrer">Style me for my event</a>
           </div>
           <div className="hero-proof"><div><b>01</b><span>Wedding<br/>Looks</span></div><div><b>02</b><span>Garba<br/>Edits</span></div><div><b>03</b><span>Fancy<br/>Dress</span></div><div><b>04</b><span>Jewellery<br/>Rentals</span></div></div>
         </div>
@@ -82,9 +82,9 @@ export default function Home(){
 
     <section className="booking-premium wrap">
       <div><span className="eyebrow">YOUR EVENT, YOUR LOOK</span><h2>Have a date already?</h2><p>Tell us the occasion and event date. We’ll help you narrow down the right rental options.</p></div>
-      <a className="btn btn-cream" href={wa("Hello Manish Costume, I want to check rental availability. My event date is: ")} target="_blank" rel="noreferrer"><MessageCircle size={18}/> Check availability <ArrowUpRight size={17}/></a>
+      <a className="btn btn-cream" href={wa("Hello Manish Beauty Center, I want to check rental availability. My event date is: ")} target="_blank" rel="noreferrer"><MessageCircle size={18}/> Check availability <ArrowUpRight size={17}/></a>
     </section>
 
-    <footer id="contact" className="site-footer"><div className="wrap footer-grid"><div><div className="brand footer-brand"><span className="brand-mark">M</span><span className="brand-copy"><b>MANISH COSTUME</b><small>BEAUTY · RENTAL CLOTHING · JEWELLERY</small></span></div><p>Celebration looks for weddings, Garba, traditional functions, kids events, fancy dress and more.</p></div><div><small>VISIT</small><p><MapPin size={15}/> Betul, Madhya Pradesh</p></div><div><small>EXPLORE</small><p><Link href="/costumes">All Collections</Link><br/><Link href="/#garba">Garba Edit</Link><br/><Link href="/#jewellery">Jewellery</Link></p></div><div><small>ENQUIRE</small><p><a href={wa("Hello Manish Costume, I want to enquire about a rental look.")} target="_blank" rel="noreferrer">WhatsApp enquiry ↗</a></p></div></div><div className="wrap footer-bottom"><span>© 2026 Manish Costume · Betul</span><span>Rent · Dress · Celebrate</span></div></footer>
+    <footer id="contact" className="site-footer"><div className="wrap footer-grid"><div><div className="brand footer-brand"><span className="brand-mark">M</span><span className="brand-copy"><b>MANISH BEAUTY CENTER</b><small>RENTAL CLOTHING · JEWELLERY · STYLING</small></span></div><p>Celebration looks for weddings, Garba, traditional functions, kids events, fancy dress and more.</p></div><div><small>VISIT</small><p><MapPin size={15}/> Cement Road, Gali No. 1, Kothi Bazar, Betul, Madhya Pradesh 460001</p></div><div><small>EXPLORE</small><p><Link href="/costumes">All Collections</Link><br/><Link href="/#garba">Garba Edit</Link><br/><Link href="/#jewellery">Jewellery</Link></p></div><div><small>ENQUIRE</small><p><a href={wa("Hello Manish Beauty Center, I want to enquire about a rental look.")} target="_blank" rel="noreferrer">WhatsApp enquiry ↗</a></p></div></div><div className="wrap footer-bottom"><span>© 2026 Manish Beauty Center · Betul</span><span>Rent · Dress · Celebrate</span></div></footer>
   </main>
 }
